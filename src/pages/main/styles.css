@@ -1,0 +1,26 @@
+.product-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.product-list article {
+    background: #b6ffcc;
+    border: 1px solid #00a030;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.product-list article strong  {
+   font-size: 20px;
+
+}
+
+
+
+.product-list article img {
+    width: 50%;
+    height: 50%;
+}

@@ -1,56 +1,78 @@
 .product-list {
-    max-width: 700px;
+    max-width: 90%;
     margin: 20px auto 0;
-    padding: 0 20px;
+    padding: 0 5px;
+    border: 1px solid #ff0095;
+    
 }
 
-.product-list article {
-    background: #b6ffcc;
-    border: 1px solid #00a030;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-
-}
-
-.product-list article strong  {
-   font-size: 20px;
-
-}
-
-
-
-.product-list article img {
-    width: 50%;
-    height: 50%;
-}
-
-.product-list .actions {
+.product {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;    
+    flex-direction: row;
+    border: 1px solid #d9ff00;
+    max-width: 600px;
+    
 }
 
-.product-list .actions button {
-    padding: 10px;
-    border-radius: 5px;
-    border: 0;
-    background: #42f477;
-    color: #e1f2e6;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+/* ////////////////////// */
+
+#produtos{
+    float: left;
+    left: 50%;
+    border-radius: 8px;
+    width: 70%;
+}
+.produto{
+    width: 31%;
+    height: 450px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+}
+.produto img{
+    width: 90%;
+    margin: 12px;
+}
+.produto h1{
+    font-size: 17px;
+    margin: 8px;
+
+}
+.produto p{
+    margin: 8px;
+}
+.produto h2{
+    margin: 10px;
+    font-size: 17px;
 }
 
-.product-list .actions button[disabled] {
-    opacity: 0.5;
-    cursor: default;  
+
+
+.flex {
+    display: flex;
+    border: 1px solid #d9ff00;
 }
 
-.product-list .actions button:hover {
-    opacity: 0.7;
+.flex-wrap {
+    flex-wrap: wrap;   
 }
 
-.product-list .actions button[disabled]:hover {
-    opacity: 0.5;
+.flex-item-1 {
+	flex: 1;
+}
+
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
 }

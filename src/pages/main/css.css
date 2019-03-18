@@ -1,0 +1,62 @@
+.product-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.product-list article {
+    background: #b6ffcc;
+    border: 1px solid #00a030;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.product-list article strong  {
+   font-size: 20px;
+
+}
+
+
+
+.product-list article img {
+    width: 50%;
+    height: 50%;
+}
+
+.product-list .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;    
+}
+
+.product-list .actions button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #42f477;
+    color: #e1f2e6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-list .actions button[disabled] {
+    opacity: 0.5;
+    cursor: default;  
+}
+
+.product-list .actions button:hover {
+    opacity: 0.7;
+}
+
+.product-list .actions button[disabled]:hover {
+    opacity: 0.5;
+}
+
+/* 
+https://material-ui.com
+https://origamid.com/projetos/flexbox-guia-completo/
+https://forum.imasters.com.br/topic/523378-galeria-de-produtos-com-descrição-em-css/
+*/

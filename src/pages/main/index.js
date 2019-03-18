@@ -47,10 +47,11 @@ export default class Main extends Component {
         return (
             
 
-            <div className="product-list">
+            <div className="product-list produtos">
             {products.map(product => (
                 //nome do produto
-                <article key={product._id}> 
+                <div className="produto">
+                <article key={product._id}>                 
                <strong> {product.name} </strong>  
                <p> {product.description} </p>
                <img className="product-img" src={product.img} alt="img" />
@@ -58,6 +59,7 @@ export default class Main extends Component {
                
                <a href="">Comprar</a>
                 </article>
+                </div>
             ))}
             <div className="actions">
             <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>

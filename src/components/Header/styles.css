@@ -1,14 +1,12 @@
 header#main-header {
     width: 100%;
     height: 80px;
-    background: #42f477;
+    background: #2ecc71;
     font-size: 38px;
     font-weight: bolder;
     color: #e1f2e6;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 1px #00a030;
-    box-shadow: 0.3px 0.3px 0.3px 0.3px #00a030;   
-
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

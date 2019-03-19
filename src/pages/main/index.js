@@ -47,24 +47,23 @@ export default class Main extends Component {
         return (
             
 
-            <div className="product-list produtos">
-            {products.map(product => (
-                //nome do produto
-                <div className="produto">
-                <article key={product._id}>                 
-               <strong> {product.name} </strong>  
-               <p> {product.description} </p>
-               <img className="product-img" src={product.img} alt="img" />
-               <p> {product.price} </p>
-               
-               <a href="">Comprar</a>
-                </article>
+            <div className="produtos">
+                {products.map(product => (
+                    //nome do produto
+                    <div className="produto">
+                        <img src={product.img} alt="img" />
+                        <div key={product._id}>                 
+                            <strong> {product.name} </strong>  
+                            <p> {product.description} </p>
+                            <p className="price"> {product.price} R$ </p>            
+                            <button onClick={this.prevPage}> Comprar</button>
+                        </div>
+                    </div>
+                ))}
+                <div className="operations">
+                    <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
+                    <button disabled={page === productInfo.pages} onClick={this.nextPage} >Próximo</button>
                 </div>
-            ))}
-            <div className="actions">
-            <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
-            <button disabled={page === productInfo.pages} onClick={this.nextPage} >Próximo</button>
-            </div>
             </div>
         )
     }
